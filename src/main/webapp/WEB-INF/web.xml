@@ -103,4 +103,20 @@
     <servlet-name>EditController</servlet-name>
     <url-pattern>/EditController</url-pattern>
   </servlet-mapping>
+  
+  
+  <filter>
+  	<filter-name>BasicFilter</filter-name>
+  	<filter-class>filter.BasicFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>BasicFilter</filter-name>
+  	<url-pattern>/15FilterListener/BasicFilter.jsp</url-pattern>
+  </filter-mapping>
+  
+  <listener>
+  	<listener-class>listener.ContextListener</listener-class>
+  </listener>
+  
+  
 </web-app>
